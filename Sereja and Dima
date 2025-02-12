@@ -1,0 +1,20 @@
+a= int(input()) 
+b = list(map(int, input().split()))
+c = 0
+d = 0
+f = True
+l = 0
+r = a - 1
+while l <= r:
+    if b[l] > b[r]:
+        g = b[l]
+        l += 1
+    else:
+        g = b[r]
+        r -= 1    
+    if f:
+        c += g
+    else:
+        d += g
+    f = not f
+print(c, d)
